@@ -5,11 +5,11 @@ const redis = require("redis"),
 function get(search, cb) {
 
     client.hgetall(search, function (err, obj) {
-        const sorted = sortAssocObject(obj);
+        const sorted = sort(obj);
         cb(sorted)
     });
 
-    function sortAssocObject(list) {
+    function sort(list) {
         var sortable = [];
         for (var key in list) {
             let integerify = parseInt(list[key]);
@@ -25,7 +25,6 @@ function get(search, cb) {
         }
         return orderedList;
     }
-
 }
 
 export default get;
