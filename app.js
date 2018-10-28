@@ -12,7 +12,7 @@ app.get('/:search', (req, res) => {
     //     res.setHeader('Access-Control-Allow-Credentials', true);
     //     res.send(data)
     // });
-    res.send("test")
+    res.send("test ")
 });
 
 app.listen(4000, () => console.log('Example app listening on port 4000!'));
