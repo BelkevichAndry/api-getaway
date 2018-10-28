@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/babel-node app.js"
+    "dev": "./node_modules/.bin/babel-node app.js",
+    "prod": "node app.js"
   },
   "keywords": [],
   "author": "",
